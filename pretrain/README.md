@@ -1,0 +1,1 @@
+### This is just used to illustrate how to make changes to the training code (loss and parameters) in PG-MRI to get the results shown in our paper. You cannot use them directly to pre-train the reconstruction model in this repository of ours.
