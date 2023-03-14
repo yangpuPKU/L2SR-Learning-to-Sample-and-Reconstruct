@@ -21,5 +21,6 @@ Accelerated MRI aims to find a pair of samplers and reconstructors to reduce acq
 
 ## Contact
 
-Pu Yang [yang_pu@pku.edu.cn](mailto:yang_pu@pku.edu.cn) \\
+Pu Yang [yang_pu@pku.edu.cn](mailto:yang_pu@pku.edu.cn)
+
 Bin Dong [dongbin@math.pku.edu.cn](mailto:dongbin@math.pku.edu.cn)
