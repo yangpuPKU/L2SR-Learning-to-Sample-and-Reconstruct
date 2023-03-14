@@ -39,6 +39,13 @@ You should:
 ```
 
 ### 3. Pretrained Reconstruction Model
+We use a U-net for reconstruction that is identical to the one used in the [this paper](https://arxiv.org/abs/2010.16262). The pre-trained model for this U-net can be trained using the [this code](https://github.com/Timsey/pg_mri). It should be noted that our settings are slightly different from those in the reference paper. Therefore, to obtain results identical to ours, the following parameters should be considered during pre-training. 
+ - Use the negative of SSIM value as loss. 
+ - Set sample_rate as 0.5 in knee dataset and 0.2 in brain dataset, as we do not use all slices for pre-training. 
+ - Change the mixed heuristic sampling policy used in dense-reward POMDP to the terminal one used in sparse-reward POMDP. 
+
+For specific details, please refer to the appendix section of the original paper and File `pretrain`.
+
 
 ### 4. Train
 
