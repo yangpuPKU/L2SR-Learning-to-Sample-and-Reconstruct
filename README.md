@@ -2,7 +2,9 @@
 This repository is the official implementation of: [L2SR: Learning to Sample and Reconstruct for Accelerated MRI](https://arxiv.org/abs/2212.02190) (arxiv, preprint).
 
 ## Contact
+
 Pu Yang [yang_pu@pku.edu.cn](mailto:yang_pu@pku.edu.cn)
+
 Bin Dong [dongbin@math.pku.edu.cn](mailto:dongbin@math.pku.edu.cn)
 
 ## Abstract 
