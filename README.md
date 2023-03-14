@@ -6,9 +6,9 @@ Accelerated MRI aims to find a pair of samplers and reconstructors to reduce acq
 
 ## Getting Started
 
-### 1.Environment
+### 1. Environment
 
-### 2.Dataset 
+### 2. Dataset 
 We utilize the single-coil knee dataset and the multi-coil brain dataset from the [fastMRI Dataset](https://fastmri.org/). The data preprocessing is consistent with that in [PG-MRI](https://github.com/Timsey/pg_mri). We reserve $20\%$ of the training data as the test set. 
 
 You should:
@@ -25,13 +25,12 @@ You should:
     val
     test
 ```
- - 
 
-### 3.Pretrained Reconstruction Model
+### 3. Pretrained Reconstruction Model
 
-### 4.Train
+### 4. Train
 
-### 5.Test
+### 5. Test
 
 
 ## Main Results
