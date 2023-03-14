@@ -7,6 +7,18 @@ Accelerated MRI aims to find a pair of samplers and reconstructors to reduce acq
 ## Getting Started
 
 ### 1. Environment
+ - Create an environment
+```
+conda create -n L2SR python=3.7
+```
+ - Use `requirement.txt` to install packages
+```
+pip install -r requirement.txt
+```
+ - Roll back the versions of Torch and Torchvision (Important!)
+```
+pip install torch==1.6.0 torchvision==0.7.0
+```
 
 ### 2. Dataset 
 We utilize the single-coil knee dataset and the multi-coil brain dataset from the [fastMRI Dataset](https://fastmri.org/). The data preprocessing is consistent with that in [PG-MRI](https://github.com/Timsey/pg_mri). We reserve $20\%$ of the training data as the test set. 
