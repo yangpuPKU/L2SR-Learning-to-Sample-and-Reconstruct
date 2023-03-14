@@ -8,17 +8,17 @@ Accelerated MRI aims to find a pair of samplers and reconstructors to reduce acq
 
 ### 1. Environment
  - Create an environment
-```
-conda create -n L2SR python=3.7
-```
+   ```
+   conda create -n L2SR python=3.7
+   ```
  - Use `requirement.txt` to install packages
-```
-pip install -r requirement.txt
-```
+   ```
+   pip install -r requirement.txt
+   ```
  - Roll back the versions of Torch and Torchvision (Important!)
-```
-pip install torch==1.6.0 torchvision==0.7.0
-```
+   ```
+   pip install torch==1.6.0 torchvision==0.7.0
+   ```
 
 ### 2. Dataset 
 We utilize the single-coil knee dataset and the multi-coil brain dataset from the [fastMRI Dataset](https://fastmri.org/). The data preprocessing is consistent with that in [PG-MRI](https://github.com/Timsey/pg_mri). We reserve $20\%$ of the training data as the test set. 
@@ -26,17 +26,17 @@ We utilize the single-coil knee dataset and the multi-coil brain dataset from th
 You should:
  - Download the the [fastMRI Dataset](https://fastmri.org/).
  - Use the File `./activemri/data/split` to split the dataset as
-```
-<path_to_data>
-  singlecoil_knee
-    train
-    val
-    test
-  multicoil_brain
-    train
-    val
-    test
-```
+   ```
+   <path_to_data>
+     singlecoil_knee
+       train
+       val
+       test
+     multicoil_brain
+       train
+       val
+       test
+   ```
 
 ### 3. Pretrained Reconstruction Model
 We use a U-net for reconstruction that is identical to the one used in the [this paper](https://arxiv.org/abs/2010.16262). The pre-trained model for this U-net can be trained using the [this code](https://github.com/Timsey/pg_mri). It should be noted that our settings are slightly different from those in the reference paper. Therefore, to obtain results identical to ours, the following parameters should be considered during pre-training. 
@@ -48,32 +48,35 @@ For specific details, please refer to the appendix section of the original paper
 
 ### 4. Train and Test
  - L2S: Learning to Sample. Use 
-```
-sh train_sparse.sh
-```
-for training, and
-```
-sh test_sparse.sh
-```
-for test. 
+   ```
+   sh train_sparse.sh
+   ```
+   for training, and
+   ```
+   sh test_sparse.sh
+   ```
+   for test. 
 
  - L2SR: Learning to Sample and Reconstruct. Notice that you should first do L2S to get a pre-trained policy and then do alternate training. Use
-```
-sh train_alter.sh
-```
-for traiing, and
-```
-sh test_alter.sh
-```
-for test. 
+   ```
+   sh train_alter.sh
+   ```
+   for traiing, and
+   ```
+   sh test_alter.sh
+   ```
+   for test. 
 
 #### You can change parameters in these `.sh` files to train and test in other settings.  ####
+
 
 ### 5. Visulization 
 See in the next version. 
 
 
 ## Main Results
+See in the next version. 
+
 
 ## Contact
 
