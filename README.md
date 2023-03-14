@@ -44,12 +44,33 @@ We use a U-net for reconstruction that is identical to the one used in the [this
  - Set sample_rate as 0.5 in knee dataset and 0.2 in brain dataset, as we do not use all slices for pre-training. 
  - Change the mixed heuristic sampling policy used in dense-reward POMDP to the terminal one used in sparse-reward POMDP. 
 
-For specific details, please refer to the appendix section of the original paper and File `pretrain`.
+For specific details, please refer to the appendix section of the original paper and File `./pretrain`.
 
+### 4. Train and Test
+ - L2S: Learning to Sample. Use 
+```
+sh train_sparse.sh
+```
+for training, and
+```
+sh test_sparse.sh
+```
+for test. 
 
-### 4. Train
+ - L2SR: Learning to Sample and Reconstruct. Notice that you should first do L2S to get a pre-trained policy and then do alternate training. Use
+```
+sh train_alter.sh
+```
+for traiing, and
+```
+sh test_alter.sh
+```
+for test. 
 
-### 5. Test
+#### You can change parameters in these `.sh` files to train and test in other settings.  ####
+
+### 5. Visulization 
+See in the next version. 
 
 
 ## Main Results
