@@ -9,6 +9,23 @@ Accelerated MRI aims to find a pair of samplers and reconstructors to reduce acq
 ### 1.Environment
 
 ### 2.Dataset 
+We utilize the single-coil knee dataset and the multi-coil brain dataset from the [fastMRI Dataset](https://fastmri.org/). The data preprocessing is consistent with that in [PG-MRI](https://github.com/Timsey/pg_mri). We reserve $20\%$ of the training data as the test set. 
+
+You should:
+ - Download the the [fastMRI Dataset](https://fastmri.org/).
+ - Use the File `./activemri/data/split` to split the dataset as
+```
+<path_to_data>
+  singlecoil_knee
+    train
+    val
+    test
+  multicoil_brain
+    train
+    val
+    test
+```
+ - 
 
 ### 3.Pretrained Reconstruction Model
 
