@@ -51,7 +51,7 @@ def train(args):
         verbose = 1, 
         seed = args.random_seed, 
     )
-    model.policy.action_net = extractor.Action_net().to(model.device)
+    model.policy.action_net = extractor.Action_net().to(model.device)  # TODO: Fix the bug that the model.policy.optimizer doesn not contain such customized action_net!
     print(model.policy)
     print('n_envs:', model.n_envs)
     # resume
